@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+<body class="flex flex-col min-h-screen">
+<nav class="flex justify-between items-center px-5 py-5 fixed z-50 w-full bg-[#3b2418]">
+    <h1 class="text-xl font-bold text-white">
+        Gloria Jean's
+    </h1>
+    <div class="hidden gap-8 md:flex">
+        <a href="../homepage/home.html" class="text-white">Home</a>
+        <a href="../menu/menu.html" class="text-white">Menu</a>
+        <a href="../visuals/visuals.html" class="text-white">Gallery</a>
+        <a href="../contactus/contactus.html" class="text-white">Contact</a>
+    </div>
+    <a href="../menu/menu.html" class="hidden md:block px-4 py-2 bg-white text-[#3b2418] rounded-md hover:bg-[#e8e2c9] hover:scale-105 transition">
+    Order Now</a>
+    <button id="menubtn" class="md:hidden text-2xl text-white"> ☰ </button>
+</nav>
+<div id="menu" class="hidden fixed mt-20 w-full bg-[#e8e2c9] p-5 rounded-md shadow-lg">
+    <div class="flex gap-4 flex-col">
+        <a href="../homepage/home.html" class="text-[#3b2418]">Home</a>
+        <a href="../menu/menu.html" class="text-[#3b2418]">Menu</a>
+        <a href="../visuals/visuals.html" class="text-[#3b2418]">Gallery</a>
+        <a href="../contactus/contactus.html" class="text-[#3b2418]">Contact</a>
+    </div>
+</div>
+    <main class="flex-1">
+    <section class="text-center py-10 ">
+    <h1 class="text-3xl font-bold mt-20 text-[#3b2418]">Our Menu</h1>         
+     <p class="text-gray-500 mt-4 px-5">
+                Crafted for slow living, this menu offers house made and locally sourced teas,
+                prepared with intention.
+            </p>
+     </section>
+
+    <div class="flex justify-center mx-10 gap-8 mt-4 bg-[#3b2418] text-white py-3 px-5 rounded-lg">
+
+    <button id="coffeebtn" class="hover:text-[#e8e2c9] transition duration-300">Espresso & Coffee </button>
+     <button id="teabtn" class="hover:text-[#e8e2c9] transition duration-300">  Teas & Infusions</button>
+     <button id="pastrybtn"class="hover:text-[#e8e2c9] transition duration-300">   Fresh Pastries</button>
+    </div>
+
+     
+    <div id="coffee">
+    <section class="mt-3 px-10 md:px-20 py-3">
+
+        <h2 class="text-center text-lg font-semibold text-[#3b2418] mb-8">
+            Espresso & Coffee </h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+  <div class="bg-[#f7f3ea] border border-[#e8e2c9] rounded-lg hover:shadow-xl hover:-translate-y-1 transition duration-300">
+
+        <img src="image/espresso_d93cf1fb-0d4d-4da2-877f-c8226560ea4a.webp"
+        alt="Espresso"
+        class="w-full h-52 object-cover">
+        <div class="p-5">
+        <div class="flex justify-between items-center">
+
+        <h3 class="text-lg font-semibold text-[#3b2418]"> Espresso</h3>
+
+        <p class="text-[#6f4228] font-semibold"> $3.50 </p>
+        </div>
+
+        <p class="text-sm text-gray-600 mt-2">  A rich shot of our house blend. Notes of dark chocolate and bright cherry.
+        </p>
+
+        </div>
+         </div>
+
+
+    <div class="bg-[#f7f3ea] border border-[#e8e2c9] rounded-lg hover:shadow-xl hover:-translate-y-1 transition duration-300">
+    <img src="image/What-is-a-Cortado-Coffee_.png"
+    alt="Cortado" class="w-full h-52 object-cover">
+
+    <div class="p-5">
+     <div class="flex justify-between items-center">
+    <h3 class="text-lg font-semibold text-[#3b2418]"> Cortado</h3>
+    <p class="text-[#6f4228] font-semibold">  $4.25  </p>
+
+     </div>
+    <p class="text-sm text-gray-600 mt-2">
+    Equal parts espresso and perfectly textured steamed milk. </p>
+    </div>
+     </div>
+
+
+    <div class="bg-[#f7f3ea] border border-[#e8e2c9] rounded-lg  hover:shadow-xl hover:-translate-y-1 transition duration-300">
+     <img src="image/images.jpg"
+                    alt="Pour Over"
+                    class="w-full h-52 object-cover">
+
+     <div class="p-5">
+    <div class="flex justify-between items-center">
+
+     <h3 class="text-lg font-semibold text-[#3b2418]">  Pour Over </h3>
+    <p class="text-[#6f4228] font-semibold">$5.50</p>
+
+    </div>
+
+    <p class="text-sm text-gray-600 mt-2"> Rotating selection of single origin beans, hand brewed for clarity and nuance.
+    </p>
+    </div>
+    </div>
+
+
+    <div class="bg-[#f7f3ea] border border-[#e8e2c9] rounded-lg hover:shadow-xl hover:-translate-y-1 transition duration-300">
+    <img src="image/images (1).jpg"
+     alt="Late" class="w-full h-52 object-cover">
+
+    <div class="p-5">
+    <div class="flex justify-between items-center">
+    <h3 class="text-lg font-semibold text-[#3b2418]">Latte</h3>
+    <p class="text-[#6f4228] font-semibold">  $5.00 </p>
+
+     </div>
+
+    <p class="text-sm text-gray-600 mt-2">
+  Espresso with generous steamed milk and a thin layer of foam. </p>
+
+     </div>
+  </div>
+
+
+    <div class="bg-[#f7f3ea] border border-[#e8e2c9] rounded-lg  hover:shadow-xl hover:-translate-y-1 transition duration-300">
+    <img src="image/Cappuccino-1.webp"
+          alt="Cappuccino"
+        class="w-full h-52 object-cover">
+
+    <div class="p-5">
+    <div class="flex justify-between items-center">
+
+    <h3 class="text-lg font-semibold text-[#3b2418]">Cappuccino </h3>
+    <p class="text-[#6f4228] font-semibold"> $4.75</p>
+
+     </div>
+
+    <p class="text-sm text-gray-600 mt-2">
+     Rich espresso with steamed milk and a soft layer of creamy foam.</p>
+    </div>
+</div>
+
+
+     <div class="bg-[#f7f3ea] border border-[#e8e2c9] rounded-lg hover:shadow-xl hover:-translate-y-1 transition duration-300">
+<img src="image/CafeMocha-hero.90a0775f.jpg" alt="Mocha" class="w-full h-52 object-cover">
+
+    <div class="p-5">
+     <div class="flex justify-between items-center">
+        <h3 class="text-lg font-semibold text-[#3b2418]">
+          Mocha</h3>
+    <p class="text-[#6f4228] font-semibold"> $5.25 </p>
+        </div>
+
+        <p class="text-sm text-gray-600 mt-2">
+         Espresso blended with chocolate and steamed milk, finished with light foam.</p>
+
+        </div>
+        </div>
+        </div>
+
+    </section>
+
+</div>
+
+
+<div id="tea" style="display: none;">
+<section class="mt-10 px-10">
+ <h2 class="text-center text-lg font-semibold text-[#3b2418] mb-8">  Tea & Infusions</h2>
+
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="bg-[#f7f3ea] border border-[#e8e2c9] rounded-lg hover:shadow-md hover:-translate-y-1 transition duration-300">
+
+<img src="image/images (2).jpg" alt="Matcha Latte" class="w-full h-52 object-cover rounded-t-lg">
+
+<div class="p-5">
+     <div class="flex justify-between items-center">
+     <h3 class="text-lg font-semibold text-[#3b2418]"> Matcha Latte </h3>
+    <p class="text-[#6f4228] font-semibold"> $5.50</p>
+
+    </div>
+
+    <p class="text-sm text-gray-600 mt-2"> Ceremonial grade matcha whisked with lightly sweetened steamed milk.
+    </p>
+    </div>
+     </div>
+
+    <div class="bg-[#f7f3ea] border border-[#e8e2c9] rounded-lg hover:shadow-md hover:-translate-y-1 transition duration-300">
+    <img src="image/Iced-Earl-Gray-Latte-7094.jpg"
+    alt="Earl Grey Reserve"
+    class="w-full h-60 object-cover rounded-t-lg">
+
+    <div class="p-5">
+    <div class="flex justify-between items-center">
+
+    <h3 class="text-lg font-semibold text-[#3b2418]">   Earl Grey Reserve</h3>
+    <p class="text-[#6f4228] font-semibold">   $4.00</p>
+    </div>
+
+    <p class="text-sm text-gray-600 mt-2">
+     High-mountain black tea blended with pure bergamot oil. </p>
+    </div>
+    </div>
+
+    <div class="bg-[#f7f3ea] border border-[#e8e2c9] rounded-lg hover:shadow-md hover:-translate-y-1 transition duration-300">
+    <img src="image/images (3).jpg" alt="Herbal Infusion"
+     class="w-full h-52 object-cover rounded-t-lg">
+        <div class="p-5">
+            <div class="flex justify-between items-center">
+             <h3 class="text-lg font-semibold text-[#3b2418]">
+             Herbal Infusion</h3>
+
+            <p class="text-[#6f4228] font-semibold"> $4.00  </p>
+
+    </div>
+        <p class="text-sm text-gray-600 mt-2">
+        Caffeine-free blend: Chamomile, Peppermint, or Hibiscus Berry.</p>
+        </div>
+     </div>
+    </div>
+    </section>
+</div>
+
+
+<div id="pastries" style="display: none;">
+ <section class="mt-10 px-10">
+    <h2 class="text-center text-lg font-semibold text-[#3b2418] mb-8">  Fresh Pastries
+    </h2>
+     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+     <div class="bg-[#f7f3ea] border border-[#e8e2c9] rounded-lg hover:shadow-md hover:-translate-y-1 transition duration-300">
+        <img src="image/images (4).jpg"alt="Almond Croissant"
+        class="w-full h-52 object-cover rounded-t-lg">
+    <div class="p-5">
+     <div class="flex justify-between items-center">
+    <h3 class="text-lg font-semibold text-[#3b2418]"> Almond Croissant
+    </h3>
+     <p class="text-[#6f4228] font-semibold">   $4.50  </p>
+     </div>
+
+    <p class="text-sm text-gray-600 mt-2">  Twice baked croissant filled with rich almond frangipane. </p>
+    </div>
+    </div>
+
+    <div class="bg-[#f7f3ea] border border-[#e8e2c9] rounded-lg hover:shadow-md hover:-translate-y-1 transition duration-300">
+    <img src="image/images (5).jpg"alt="Cardamom Bun"
+        class="w-full h-52 object-cover rounded-t-lg">
+      <div class="p-5">
+          <div class="flex justify-between items-center">
+          <h3 class="text-lg font-semibold text-[#3b2418]">   Cardamom Bun</h3>
+
+        <p class="text-[#6f4228] font-semibold"> $4.00</p>
+        </div>
+
+        <p class="text-sm text-gray-600 mt-2">
+          A Scandinavian classic. Sweet dough twisted with crushed cardamom and sugar.</p>
+         </div>
+
+     </div>
+
+    <div class="bg-[#f7f3ea] border border-[#e8e2c9] rounded-lg hover:shadow-md hover:-translate-y-1 transition duration-300">
+    <img src="image/d03e52b3c8af19d8fa8222e23efd9cfa.jpeg" alt="Seasonal Scone"
+     class="w-full h-52 object-cover rounded-t-lg">
+
+     <div class="p-5">
+    <div class="flex justify-between items-center">
+
+    <h3 class="text-lg font-semibold text-[#3b2418]">  Seasonal Scone</h3>
+    <p class="text-[#6f4228] font-semibold">  $3.75</p>
+    </div>
+
+    <p class="text-sm text-gray-600 mt-2">
+     House-baked daily. Ask your barista about today's fresh flavor.</p>
+     </div>
+   </div>
+</div>
+    </section>
+
+</div>
+</main>
+
+
+ <footer class="bg-gray-500 px-5 py-10 mt-10">
+<div class=" grid grid-cols-1 md:grid-cols-3 max-w-6xl mx-auto gap-8 text-white text-center">
+    <div> <h2 class="text-2xl font-bold mb-3"> Gloria Jean's Coffee House<h2>
+            <p class="text-gray-200"> Fresh coffee, warm moments, and a place to slow down and enjoy.</p>
+        </div>
+        <div>
+            <h3 class="text-lg font-semibold mb-3">Contact Us</h3>
+            <p class="text-gray-200"> New York, USA</p>
+            <p class="text-gray-200 mt-2"> +1 234 567 890</p>
+            <p class="text-gray-200 mt-2"> gloriajeanscoffee@gmail.com</p>
+        </div>
+
+        <div>
+            <h3 class="text-lg font-semibold mb-3">Quick Links</h3>
+            <div class="flex flex-col gap-2">
+                <a href="#" class="hover:underline">Privacy Policy</a>
+                <a href="#" class="hover:underline">Terms & Conditions</a>
+                <a href="#" class="hover:underline">Contact Us</a>
+            </div>
+    </div>
+    </div>
+
+<hr class="border-gray-700 mt-8">
+<p class="text-white text-center mt-5">
+    2026 Gloria Jean's Coffee House. Crafted for slow living.
+</p>
+</footer>
+    <script src="script.js"></script>
+
+</body>
+</html>

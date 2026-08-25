@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+</head>
+<body>
+<nav class="flex justify-between items-center px-5 py-5 fixed z-50 w-full bg-[#3b2418]">
+    <h1 class="text-xl font-bold text-white">
+        Gloria Jean's
+    </h1>
+    <div class="hidden gap-8 md:flex">
+        <a href="../homepage/home.html" class="text-white">Home</a>
+        <a href="../menu/menu.html" class="text-white">Menu</a>
+        <a href="../visuals/visuals.html" class="text-white">Gallery</a>
+        <a href="../contactus/contactus.html" class="text-white">Contact</a>
+    </div>
+    <a href="../menu/menu.html" class="hidden md:block px-4 py-2 bg-white text-[#3b2418] rounded-md hover:bg-[#e8e2c9] hover:scale-105 transition">
+    Order Now</a>
+    <button id="menubtn" class="md:hidden text-2xl text-white"> ☰ </button>
+</nav>
+<div id="menu" class="hidden fixed mt-20 w-full bg-[#e8e2c9] p-5 rounded-md shadow-lg">
+    <div class="flex gap-4 flex-col">
+        <a href="../homepage/home.html" class="text-[#3b2418]">Home</a>
+        <a href="../menu/menu.html" class="text-[#3b2418]">Menu</a>
+        <a href="../visuals/visuals.html" class="text-[#3b2418]">Gallery</a>
+        <a href="../contactus/contactus.html" class="text-[#3b2418]">Contact</a>
+    </div>
+</div>
+
+    <section class="px-5 pt-32">
+        <h1 class="text-3xl font-bold text-center text-[#3b2418] ">
+            Visuals
+        </h1>
+        <p class="mt-5 text-center text-sm text-gray-500 px-5 mb-7">
+        A glimpse into the sensory experience, comforting atmosphere, and craftsmanship that defines our space.
+        </p>
+    </section>
+
+    <section class="px-5">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-2">
+        <div class="md:col-span-2 md:row-span-2 px-4 mt-5">
+            <img src="image/istockphoto-2213958626-612x612.jpg"
+            alt="coffee shop"
+            class="w-full h-full object-cover rounded-lg hover:scale-105 transition duration-300">
+        </div>
+
+         <div class="px-4 mt-5">
+             <img
+                src="image/types-of-coffee-beans-and-characteristics-2-1.webp"
+                alt="Coffee"
+                class="w-full h-full object-cover rounded-lg hover:scale-105 transition duration-300">
+        </div>
+
+          <div class="px-4 mt-5">
+             <img
+                src="image/Corkframes_Coffee_Guide_520x500_422ebe38-4cfa-42b5-a266-b9bfecabaf30.webp"
+                alt="Coffee"
+                class="w-full h-full object-cover rounded-lg hover:scale-105 transition duration-300">
+        </div>
+        <div class="px-4 mt-5">
+        <img src="image/images (6).jpg"
+            alt="Coffee"
+             class="w-full h-full object-cover rounded-lg hover:scale-105 transition duration-300">
+        </div>
+        <div class="md:col-span-2 px-4 mt-5">
+        <img src="image/images (7).jpg"
+            alt="Coffee"
+             class="w-full h-full object-cover rounded-lg hover:scale-105 transition duration-300">
+        </div>
+
+        </div>
+    </section>
+
+     <footer class="bg-gray-500 px-5 py-10 mt-10">
+<div class=" grid grid-cols-1 md:grid-cols-3 max-w-6xl mx-auto gap-8 text-white text-center">
+    <div> <h2 class="text-2xl font-bold mb-3"> Gloria Jean's Coffee House</h2>
+            <p class="text-gray-200"> Fresh coffee, warm moments, and a place to slow down and enjoy.</p>
+        </div>
+        <div>
+            <h3 class="text-lg font-semibold mb-3">Contact Us</h3>
+            <p class="text-gray-200"> New York, USA</p>
+            <p class="text-gray-200 mt-2"> +1 234 567 890</p>
+            <p class="text-gray-200 mt-2">gloriajeanscoffee@gmail.com</p>
+        </div>
+
+        <div>
+            <h3 class="text-lg font-semibold mb-3">Quick Links</h3>
+            <div class="flex flex-col gap-2">
+                <a href="#" class="hover:underline">Privacy Policy</a>
+                <a href="#" class="hover:underline">Terms & Conditions</a>
+                <a href="#" class="hover:underline">Contact Us</a>
+            </div>
+        </div>
+    </div>
+
+<hr class="border-gray-700 mt-8">
+<p class="text-white text-center mt-5">
+    2026 Gloria Jean's Coffee House. Crafted for slow living.
+</p>
+</footer>
+    <script src="script.js"></script>
+
+</body>
+</html>
