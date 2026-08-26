@@ -6,6 +6,35 @@ menubtn.addEventListener("click", function () {
 });
 
 
+let image = document.getElementById("image")
+let next = document.getElementById("next")
+let previous = document.getElementById("previous")
+
+let images = [
+    "image/oms-photo-brent-taylor-coffee-010 (1).jpg",
+    "image/images (1).jpg",
+    "image/cup-coffee-with-leaf-top_1099697-268.avif"
+]
+
+let index = 0;
+next.addEventListener("click", function() {
+    index = index + 1
+    if (index > 2) {
+        index = 0;
+    }
+    image.src = images[index];
+})
+
+previous.addEventListener("click", function() {
+    index = index - 1
+    if (index < 0) {
+        index = 2
+    }
+    image.src = images[index]
+
+})
+
+
 let popupbtn = document.getElementById("popupbtn")
 let popup = document.getElementById("popup");
 let closebtn = document.getElementById("closebtn")

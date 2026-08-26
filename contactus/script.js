@@ -10,9 +10,9 @@ let form = document.getElementById("form")
 let name = document.getElementById("name")
 let email = document.getElementById("email")
 let message = document.getElementById("message")
-let nameerror = document.getElementById("nameError")
-let emailerror = document.getElementById("emailError")
-let messageerror = document.getElementById("messageError")
+let nameerror = document.getElementById("nameerror")
+let emailerror = document.getElementById("emailerror")
+let messageerror = document.getElementById("messageerror")
 let success = document.getElementById("success")
 
 let namePattern = /^[A-Za-z ]+$/
@@ -20,7 +20,7 @@ let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 
 form.addEventListener("submit", function(event) {
 
-    event.preventDefault();
+    event.preventDefault()
     nameerror.innerText = ""
     emailerror.innerText = ""
     messageerror.innerText = ""
@@ -36,11 +36,10 @@ else if (!namePattern.test(name.value))
         emailerror.innerText = "Email is empty";
     }
     else if (!emailPattern.test(email.value)) {
-        emailerror.innerText = " Enter valid email "
+     emailerror.innerText = " Enter valid email "
     }
 if (message.value === "") 
-    {
-        messageerror.innerText = "Message is empty";
+    {messageerror.innerText = "Message is empty";
     }
 
     if (nameerror.innerText === "" &&
@@ -48,6 +47,9 @@ if (message.value === "")
         messageerror.innerText === "") 
  {
     success.innerText = "Message sent successfully"
+    name.value = ""
+    email.value = ""
+    message.value = ""
     }
 
-});
+})

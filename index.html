@@ -8,9 +8,7 @@
 </head>
 <body>
 <nav class="flex justify-between items-center px-5 py-5 fixed z-50 w-full bg-[#3b2418]">
-    <h1 class="text-xl font-bold text-white">
-        Gloria Jean's
-    </h1>
+    <h1 class="text-xl font-bold text-white"> Gloria Jean's </h1>
     <div class="hidden gap-8 md:flex">
          <a href="index.html" class="text-white">Home</a>
         <a href="../menu/menu.html" class="text-white">Menu</a>
@@ -82,14 +80,25 @@
 
 
 <section class="max-w-5xl mx-auto px-10 py-12">
-    <h2 class="text-3xl font-semibold text-[#3b2418] mb-8"> Curated Selections</h2>
+<h2 class="text-3xl font-semibold text-[#3b2418] mb-8"> Curated Selections</h2>
 
 <div class="flex flex-col md:flex-row gap-9">  
-        <div>
-            <img src="image/oms-photo-brent-taylor-coffee-010 (1).jpg"
-            alt="coffee image"
-            class="w-full h-[350px] object-cover rounded-lg shadow-lg hover:scale-105 transition duration-500">
-        </div>
+      
+    <div class="flex flex-col items-center">
+    <img id="image"
+        src="image/oms-photo-brent-taylor-coffee-010 (1).jpg"
+        alt="coffee image"
+        class="w-full h-[350px] object-cover rounded-lg shadow-lg">
+
+    <div class="flex gap-4 mt-4">
+        <button id="previous"
+            class="bg-[#3b2418] text-white px-5 py-2 rounded-lg"> &lt;  </button>
+
+        <button id="next"
+            class="bg-[#3b2418] text-white px-5 py-2 rounded-lg">&gt;</button>
+    </div>
+</div>
+
      <div class="flex flex-col gap-6">
 
         <div class="border border-[#d8d0b8] rounded-lg p-6 hover:shadow-lg hover:-translate-y-1 transition duration-300">
@@ -151,30 +160,61 @@
     </div>
 </section>
 
+<section class="max-w-5xl mx-auto px-5 py-12">
+
+    <h2 class="text-3xl font-semibold text-[#3b2418] text-center mb-8">
+        What Our Customers Say
+    </h2>
+
+    <div class="flex flex-col md:flex-row gap-6">
+     <div class="border border-[#d8d0b8] rounded-lg p-6">
+        <p class="text-gray-600">
+                "The coffee was amazing and the place had such a peaceful
+                atmosphere. I really enjoyed my visit."   </p>
+        <h3 class="text-[#3b2418] font-semibold mt-5">  Sarah</h3>
+        </div>
+        <div class="border border-[#d8d0b8] rounded-lg p-6">
+            <p class="text-gray-600"> "One of the best coffees I have had. The taste was fresh
+                and the service was great." </p>
+        <h3 class="text-[#3b2418] font-semibold mt-5">  Michael </h3>
+        </div>
+        <div class="border border-[#d8d0b8] rounded-lg p-6">
+            <p class="text-gray-600">
+                "A really nice place to relax and enjoy a cup of coffee.
+                I would definitely come again"</p>
+            <h3 class="text-[#3b2418] font-semibold mt-5">Emma </h3>
+     </div>
+    </div>
+</section>
+
 <section class="bg-[#e8e2c9] px-5 py-12 mt-10">
     <h2 class="text-2xl font-semibold text-[#3b2418]  text-center mb-8">
         Frequently Asked Question </h2>
     <div class="question max-w-3xl mx-auto bg-white rounded-lg mb-3">
 
-    <button class="questionbtn w-full text-left px-5 py-4 text-white bg-[#3b2418] rounded-xl">  Where does your coffee come from?
+    <button class="questionbtn flex justify-between items-center w-full text-left px-5 py-4 text-white bg-[#3b2418] rounded-xl">  Where does your coffee come from?
+        <span class="text-2xl">+</span>
      </button>
 
         <p class="answer px-5 pb-4 text-sm text-gray-600 mt-5">
-            We source our coffee from carefully selected farms
-            and producers around the world. </p>
+            We source our coffee from carefully selected farms and producers around the world. </p>
     </div>
 
     <div class="question max-w-3xl mx-auto bg-white rounded-lg mb-3">
-        <button class="questionbtn w-full text-left px-5 py-4 text-white bg-[#3b2418] rounded-xl">
-            Do you offer takeaway coffee? </button>
+        <button class="questionbtn flex justify-between items-center w-full text-left px-5 py-4 text-white bg-[#3b2418] rounded-xl">
+            Do you offer takeaway coffee?
+         <span class="text-2xl">+</span>
+         </button>
 
         <p class="answer px-5 pb-4 text-sm text-gray-600 mt-5">
          Yes, you can order your favorite coffee for pickup.</p>
     </div>
 
     <div class="question max-w-3xl mx-auto bg-white rounded-lg mb-3">
-        <button class="questionbtn w-full text-left px-5 py-4 text-white bg-[#3b2418] rounded-xl">
-            What are your opening hours?  </button>
+        <button class="questionbtn flex justify-between items-center w-full text-left px-5 py-4 text-white bg-[#3b2418] rounded-xl">
+            What are your opening hours? 
+         <span class="text-2xl">+</span>
+         </button>
 
         <p class="answer px-5 pb-4 text-sm text-gray-600 mt-5">
             We are open Monday to Friday from 7am to 4pm. </p>
@@ -184,7 +224,7 @@
 <footer class="bg-gray-500 px-5 py-10 mt-10">
 <div class=" grid grid-cols-1 md:grid-cols-3 max-w-6xl mx-auto gap-8 text-white text-center">
     <div> <h2 class="text-2xl font-bold mb-3">Gloria Jean's Coffee House</h2>
-            <p class="text-gray-200"> Fresh coffee, warm moments, and a place to slow down and enjoy.</p>
+            <p class="text-gray-200"> Fresh coffee, warm moments and a place to slow down and enjoy.</p>
         </div>
         <div>
             <h3 class="text-lg font-semibold mb-3">Contact Us</h3>
@@ -202,7 +242,6 @@
         </div>
         </div>
     </div>
-
 <hr class="border-gray-700 mt-8">
 <p class="text-white text-center mt-5">
     2026 Gloria Jean's Coffee House. Crafted for slow living.</p>
