@@ -32,7 +32,7 @@
 
 
     <section class="flex flex-col md:flex-row items-center justify-between pt-32 px-5 md:px-16 ">    
-<div class="w-full md:w-1/2 text-center md:text-left">
+<div class="w-full md:w-1/2 text-center md:text-left md:pl-20">
             <p class="text-sm">Specialty Coffee</p>
         <h1 class="text-5xl md:text-6xl font-bold text-[#3b2418] mt-3">
             Crafted for <br>
@@ -119,12 +119,24 @@
     </div>
 
     <div class="mt-17 text-center">
-    <a href="../menu/menu.html"
-       class="bg-[#3b2418] text-white px-6 py-3 rounded-xl hover:bg-[#6f4228] hover:scale-105 transition duration-300">
-        See More Menu Items
-    </a>
+  <button id="popupbtn"
+    class="bg-[#3b2418] text-white px-6 py-3 rounded-xl hover:bg-[#6f4228] hover:scale-105 transition duration-300">
+    See More Menu Items
+</button>
 </div>
 </section>
+
+<div id="popup" class="hidden flex justify-center items-center">
+    <div class="bg-white p-8 rounded-xl text-center">
+        <h2 class="text-2xl font-semibold text-[#3b2418]">Explore Our Menu</h2>
+    <p class="text-gray-600 mt-3">  Check out our complete coffee menu. </p>
+        <div class="mt-6 flex gap-3 justify-center">
+         <a href="../menu/menu.html"
+      class="bg-[#3b2418] text-white px-5 py-2 rounded-lg"> View Menu </a>
+     <button id="closebtn"  class="border border-[#3b2418] text-[#3b2418] px-5 py-2 rounded-lg"> Close </button>
+     </div>
+    </div>
+</div>
 
 
 
@@ -132,19 +144,14 @@
     <div class="max-w-5xl mx-auto px-10 py-12">
         <h2 class="text-lg font-semibold text-center">Our Passion</h2>
         <p class="mt-5 text-center">We believe in the quiet moments.
-            Warm Brew was founded on a simple principle: 
-            coffee is an agricultural product that deserves
-            respect, and drinking it should be a grounding 
-            ritual. We source sustainably, roast delicately,
+            Warm Brew was founded on a simple principle:  coffee is an agricultural product that deserves
+            respect, and drinking it should be a grounding ritual. We source sustainably, roast delicately,
             and serve intentionally.
         </p>
     </div>
-
 </section>
 
-
 <section class="bg-[#e8e2c9] px-5 py-12 mt-10">
-
     <h2 class="text-2xl font-semibold text-[#3b2418]  text-center mb-8">
         Frequently Asked Question </h2>
     <div class="question max-w-3xl mx-auto bg-white rounded-lg mb-3">
@@ -154,21 +161,15 @@
 
         <p class="answer px-5 pb-4 text-sm text-gray-600 mt-5">
             We source our coffee from carefully selected farms
-            and producers around the world.
-        </p>
-
+            and producers around the world. </p>
     </div>
 
     <div class="question max-w-3xl mx-auto bg-white rounded-lg mb-3">
-
         <button class="questionbtn w-full text-left px-5 py-4 text-white bg-[#3b2418] rounded-xl">
-            Do you offer takeaway coffee?
-        </button>
+            Do you offer takeaway coffee? </button>
 
         <p class="answer px-5 pb-4 text-sm text-gray-600 mt-5">
-         Yes, you can order your favorite coffee for pickup.
-        </p>
-
+         Yes, you can order your favorite coffee for pickup.</p>
     </div>
 
     <div class="question max-w-3xl mx-auto bg-white rounded-lg mb-3">
@@ -195,17 +196,16 @@
         <div>
             <h3 class="text-lg font-semibold mb-3">Quick Links</h3>
             <div class="flex flex-col gap-2">
-                <a href="#" class="hover:underline">Privacy Policy</a>
-                <a href="#" class="hover:underline">Terms & Conditions</a>
-                <a href="#" class="hover:underline">Contact Us</a>
+            <a href="#" class="hover:underline">Privacy Policy</a>
+             <a href="#" class="hover:underline">Terms & Conditions</a>
+             <a href="#" class="hover:underline">Contact Us</a>
         </div>
         </div>
     </div>
 
 <hr class="border-gray-700 mt-8">
 <p class="text-white text-center mt-5">
-    2026 Gloria Jean's Coffee House. Crafted for slow living.
-</p>
+    2026 Gloria Jean's Coffee House. Crafted for slow living.</p>
 </footer>
  <script src="script.js"></script>
 </body>
